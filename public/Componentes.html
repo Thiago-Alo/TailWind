@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ><!--class="dark"-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+<body class="bg-gray-600 dark:bg-black">
+    <div class="container mx-auto px-4 py-8 bg-yellow-300 dark:bg-black">
+        <h6 class="font-bold mb-2 dark:text-yellow-300">Card</h6>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="w-full bg-gray-100 p-4 border-b border-gray-500 dark:bg-yellow-300">
+                <h4 class="font-bold dark:text-black">Titulo do card</h4>
+                <!--BADGE-->
+                <div class="inline-flex item-center text-sm bg-green-300 rounded px-1.5 py-0.5 font-fold dark:text-black font-medium">
+                    BADGE/On
+                </div>
+                <div class="inline-flex item-center text-sm bg-red-300 rounded px-1.5 py-0.5 font-fold dark:text-black font-medium">
+                    BADGE/Off
+                </div>
+                <div class="inline-flex item-center text-sm bg-yellow-300 rounded px-1.5 py-0.5 font-fold dark:text-black dark:bg-white font-medium">
+                    BADGE/Progress
+                </div>
+            </div>
+            <div class="px-4 dark:font-semibold dark:border-2 dark:border-red-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur atque suscipit dolores est, quam laborum ad nihil numquam quae sequi illum voluptatibus pariatur? Quas explicabo ex ut, maiores modi necessitatibus.
+            </div>
+            <div class="w-full bg-gray-100 p-3 border-t border-gray-500 dark:bg-yellow-300">
+                <h4 class="font-bold">Footer do card</h4>
+                <!--BUTTON-->
+                <button class="bg-blue-500 px-4 py-1 rounded-lg text-white shadow-xl hover:bg-blue-400">Small</button>
+                <button class="bg-blue-500 px-8 py-2 rounded-lg text-white shadow-xl hover:bg-blue-400">Medium</button>
+                <button class="bg-blue-500 px-8 py-4 rounded-lg text-white shadow-xl hover:bg-blue-400">Large</button>
+                <button class="bg-blue-500 px-11 py-8 rounded-lg text-white shadow-xl hover:bg-blue-400">X-Large</button>
+            </div>
+            <div class="ml-3">
+                <h6 class="font-bold dark:text-black">INPUT</h6>
+                <input class="bg-gray-300 border border-gray-400 focus:border-blue-500 rounded px-1 py-1 text-sm placeholder-red-500 focus:outline-none" type="text" placeholder="input">
+                <input class="bg-gray-300 border border-gray-400 focus:ring-2 focus:ring-red-600 focus:ring-opacity-20 rounded px-1 py-2 text-base placeholder-red-500 focus:outline-none" type="text" placeholder="input base">
+                <input class="bg-gray-300 border border-gray-400 focus:ring-4 focus:ring-red-600 focus:ring-opacity-20 rounded px-2 py-2 text-base placeholder-red-800 focus:outline-none transition duration-500 ease-is-out" type="text" placeholder="Transition">  
+            </div>
+            <div class="m-3">
+                <h6 class="font-bold dark:text-black">DROPDOWN</h6>
+                <div class="relative">
+                    <button class=" flex items-center bg-orange-400 px-4 py-2 rounded-lg text-white shadow-xl hover:bg-red-400">Dropdown<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path></svg></button>
+                    <!--absolute hidden \/-->
+                    <div class="flex flex-col bg-black border border-gray-700 py-1 px-2">
+                        <a class="w-full text-sm px-3 py-1 my-2 text-white border  hover:bg-gray-400" href="">link 1</a>
+                        <a class="w-full text-sm px-3 py-1 my-2 text-white border hover:bg-gray-400" href="">link 2</a>
+                        <a class="w-full text-sm px-3 py-1 my-2 text-white border hover:bg-gray-400" href="">link 3</a>
+                        <a class="w-full text-sm px-3 py-1 my-2 text-white border hover:bg-gray-400" href="">link 4</a>
+                        <a class="w-full text-sm px-3 py-1 my-2 text-white border hover:bg-gray-400" href="">link 5</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

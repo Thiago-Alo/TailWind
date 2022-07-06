@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Criando classes dentro do arquivo tailwind*/
+@layer utilities{
+    .laravue{
+        @apply bg-purple-400 font-bold;
+    }
+}

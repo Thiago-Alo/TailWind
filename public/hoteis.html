@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+<body class="bg-gray-50">
+    <!--  HEADER  -->
+    <header class="">
+        <div class="container mx-auto px-4 h-24 flex items-center justify-between">
+            <div class="font-bold">
+                LOGO
+            </div>
+            <ul>
+                <li>
+                    <a class="text-sm text-gray-600 hover:text-gray-800 hover:underline" href="">Informações</a>
+                    <a class="text-sm text-gray-600 hover:text-gray-800 hover:underline" href="">Contatos</a>
+                    <a class="text-sm text-gray-600 hover:text-gray-800 hover:underline" href="">Reserva</a>
+                    <a class="text-sm text-gray-600 hover:text-gray-800 hover:underline" href="">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- / HEADER-->
+    <!--BANNER-->
+    <div>
+        <div class="container mx-auto px-4" style="background:url('../img/intercontinental-cascais-estoril-fachada-exterior-noite.jpg');background-repeat: no-repeat;background-size: cover;height:450px;">
+            <div class="container mx-auto px-4 h-full flex items-center justify-center">
+                <div class="text-white text-center ">
+                    <h1 class="text-3xl mb-2">Onde você quer ir?</h1>
+                    <p>Escolha o Estado e a cidade!</p>
+                </div>
+                <div>
+                    <form class="space-x-4" action="">
+                        <select class="bg-grey-50 px-3 py-2 border border-gray-300 rounded text-gray-500" name="" id="">
+                            <option value="">Escolha o Estado</option>
+                        </select>
+                        <select class="bg-grey-50 px-3 py-2 border border-gray-300 rounded text-gray-500" name="" id="">
+                            <option value="">Escolha a Cidade</option>
+                        </select>
+                        <button class="text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--/BANNER-->
+</body>
+</html>

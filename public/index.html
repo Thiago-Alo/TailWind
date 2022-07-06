@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailWind</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+</head>
+<body  class="bg-blue-500 h-screen dark:bg-gray-800">
+    <!------FLEX------->
+    <div class="flex justify-center items-center space-x-4 r border-dashed border-x-pink-500 border-y-grey-700 border-4 h-32 ">
+        <div class="w-24 h-24 text-white bg-gradient-to-bl from-yellow-500 via-red-400 to-pink-500">
+            <h1 class="text-sm sm:text-base md:text-xl lg:text-2xl font-bold underline">
+                Hello world FLEX!
+            </h1>
+        </div>
+        <div class="flex-grow flex-shrink-0 w-40 h-24 text-white bg-gradient-to-bl from-yellow-500 via-red-400 to-pink-500">
+            <h1 class="text-md font-bold underline">
+                Hello TailWind FLEX!
+            </h1>
+        </div>
+        <div class=" w-24 h-24 text-white bg-gradient-to-bl from-yellow-500 via-red-400 to-pink-500">
+            <h1 class="text-lg font-bold underline">
+                Hello Vue FLEX!
+            </h1>
+        </div>
+    </div>
+    <!-----GRID----->
+    <div class="grid grid-cols-3 gap-4 h-36 border-dashed border-black border-4">
+        <div class="col-span-2 text-white bg-gradient-to-bl from-green-400 via-black to-white">
+            <h1 class="font-bold underline">
+                Hello world GRID!
+            </h1>
+        </div>
+        <div class="text-white bg-gradient-to-bl from-green-400 via-black to-white">
+            <h1 class="font-bold underline">
+                Hello TailWind GRID!
+            </h1>
+        </div>
+        <div class="col-span-3  text-white bg-gradient-to-bl from-green-400 via-black to-white">
+            <h1 class="font-bold underline">
+                Hello Vue GRID!
+            </h1>
+        </div>
+        <div class=" text-white bg-gradient-to-bl from-green-400 via-black to-white">
+            <h1 class="font-bold underline">
+                Hello world GRID!
+            </h1>
+        </div>
+        <div class="text-white bg-gradient-to-bl from-green-400 via-black to-white">
+            <h1 class="font-bold underline">
+                Hello TailWind GRID!
+            </h1>
+        </div>
+        <div class="  text-white bg-gradient-to-bl from-green-400 via-black to-white">
+            <h1 class="font-bold underline">
+                Hello Vue GRID!
+            </h1>
+        </div>
+    </div>
+    <!-------RESPONSIVIDADE--------->
+    <DIV class="mt-4 bg-black sm:bg-red-400 md:bg-white lg:bg-purple-600 xl:bg-gradient-to-tr from-purple-600 via-green-400 to-red-500 h-20 
+    border-2 border-red-600 border-solid 2xl:bg-green-300">
+        <h1 class="text-center text-red-700 font-extrabold">RESPONSIVIDADE</h1>
+    </DIV>
+    <!-----HOVER & FOCUS---->
+    <div class="laravue border-4  dark:bg-gray-800">
+        <h1 class="text-center text-gray-300 hover:text-black hover:font-bold hover:underline">Hover e Focus</h1>
+        <div class="flex flex-row p-2 ">
+            <div class="group mr-2 w-72 bg-red-500 p-4 hover:rounded-full">
+                <h4 class="group-hover:text-blue-300 group-hover:bg-black  group-hover:rounded-full group-hover:text-center 
+                font-medium text-lg dark:group-hover:bg-white">Tituto card</h4>
+                <p class="text-yellow-200 group-hover:text-black text-sm font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+            </div>
+            <input class="focus:text-red-800 focus:bg-black bg-gray-600 text-lg h-10 border-black border-2 dark:focus:bg-white" type="text">
+        </div>
+
+    </div>
+</body>
+</html>
