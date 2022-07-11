@@ -7,48 +7,134 @@
     <title>Login</title>
     <link rel="stylesheet" href="./css/tailwind.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-700">
     <!--  HEADER  -->
     <header class="">
-        <div class="container mx-auto px-4 h-24 flex items-center justify-between">
+        <div class="container text-yellow-400 mx-auto px-4 h-24 flex items-center justify-between">
             <div class="font-bold">
                 LOGO
             </div>
-            <ul>
-                <li>
-                    <a class="text-sm text-gray-600 hover:text-gray-800 hover:underline" href="">Informações</a>
-                    <a class="text-sm text-gray-600 hover:text-gray-800 hover:underline" href="">Contatos</a>
-                    <a class="text-sm text-gray-600 hover:text-gray-800 hover:underline" href="">Reserva</a>
-                    <a class="text-sm text-gray-600 hover:text-gray-800 hover:underline" href="">Sobre</a>
+            <ul >
+                <li class="space-x-3">
+                    <a class="text-base text-white hover:text-yellow-300 hover:underline hover:font-bold" href="">Informações</a>
+                    <a class="text-base text-white hover:text-yellow-300 hover:underline hover:font-bold" href="">Contatos</a>
+                    <a class="text-base text-white hover:text-yellow-300 hover:underline hover:font-bold" href="">Reserva</a>
+                    <a class="text-base text-white hover:text-yellow-300 hover:underline hover:font-bold" href="">Sobre</a>
                 </li>
             </ul>
         </div>
     </header>
     <!-- / HEADER-->
     <!--BANNER-->
-    <div>
-        <div class="container mx-auto px-4" style="background:url('../img/intercontinental-cascais-estoril-fachada-exterior-noite.jpg');background-repeat: no-repeat;background-size: cover;height:450px;">
-            <div class="container mx-auto px-4 h-full flex items-center justify-center">
-                <div class="text-white text-center ">
-                    <h1 class="text-3xl mb-2">Onde você quer ir?</h1>
-                    <p>Escolha o Estado e a cidade!</p>
-                </div>
-                <div>
-                    <form class="space-x-4" action="">
-                        <select class="bg-grey-50 px-3 py-2 border border-gray-300 rounded text-gray-500" name="" id="">
-                            <option value="">Escolha o Estado</option>
-                        </select>
-                        <select class="bg-grey-50 px-3 py-2 border border-gray-300 rounded text-gray-500" name="" id="">
-                            <option value="">Escolha a Cidade</option>
-                        </select>
-                        <button class="text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded">Pesquisar</button>
-                    </form>
-                </div>
+    <div style="background:url('../img/england.png');background-repeat: no-repeat;background-size: cover;height:700px;opacity:0.8;">
+        <div class="container mx-auto px-4 h-full flex flex-col items-center justify-center">
+            <div class="text-white text-center font-bold">
+                <h1 class="text-3xl mb-2">Onde você quer ir?</h1>
+                <p>Escolha o Estado e a cidade!</p>
             </div>
-            
+            <div>
+                <form class="space-x-4 mt-8" action="">
+                    <select class="bg-grey-50 px-4 py-3 border border-gray-300 rounded text-gray-500 font-bold" name="" id="">
+                        <option value="">Escolha o Estado</option>
+                    </select>
+                    <select class="bg-grey-50 px-4 py-3 border border-gray-300 rounded text-gray-500 font-bold" name="" id="">
+                        <option value="">Escolha a Cidade</option>
+                    </select>
+                    <button class="inline-flex items-center text-black bg-yellow-400 px-3 py-2 rounded font-bold">Pesquisar
+                        <svg class="w-6 h-6 ml-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
-
     <!--/BANNER-->
+    <!-- FEATURED -->
+    <div class="bg-gray-300 my-10 ">
+        <div class="container mx-auto h-auto">
+            <div class="flex font-medium text-xl">
+                <div class="w-1/2">
+                    <div class="text-sm">RESORT EM DESTAQUE</div>
+                    <div class="font-bold text-2xl">ECOSERTOR PRAIA </div>
+                    <DIV class="text-sm mt-2">HOTEL 5 ESTRELAS</DIV>
+                    <p class="text-sm font-mediun mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate deserunt iusto saepe cupiditate sint id, officiis nobis! Iste, illum facere magni eos deserunt molestiae pariatur cupiditate nihil quis laudantium provident.</p>
+                    <p class="text-sm font-mediun mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate deserunt iusto saepe cupiditate sint id, officiis nobis! Iste, illum facere magni eos deserunt molestiae pariatur cupiditate nihil quis laudantium provident.</p>
+                    <button class="inline-flex items-center mt-4 text-black bg-yellow-400 px-3 py-2 rounded font-bold">Solicitar Reserva
+                    </button>
+                </div>
+                <div class="ml-auto w-full">
+                    <img class="h-full w-full" src="/img/coqueiro.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /FEATURED -->
+    <!-- RESORTS GRID-->
+    <DIV class="bg-gray-300 my-4 ">
+        <div class="container mx-auto px-4  h-auto">
+            <div>
+                <h3 class="text-black text-2xl font-semibold shadow-lg shadow-black text-center mb-4">Conheça mais Resorts</h3>
+                <div class="relative grid grid-cols-4 grid-rows-2 gap-6 shadow-xl shadow-black">
+                    <div class="col-span-2 row-span-2 rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 font-bold">
+                            Beach Resort
+                        </div>
+                        <img class="w-full h-full object-cover"src="/img/hotel 1.jpg" alt="">
+                    </div>
+                    <div class="relative col-span-2 rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 font-bold">
+                            Maragogi Resort
+                        </div>
+                        <img class="w-full h-full object-cover" src="/img/hotel 2.jpg" alt="">
+                    </div>
+                    <div class="relative rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 font-bold">
+                            Floripa Resort
+                        </div>
+                        <img class="w-full h-full object-cover" src="/img/hotel 3.jpg" alt="">
+                    </div>
+                    <div class="rounded-md overflow-hidden">
+                        <div class="absolute bottom-0 pl-4 pb-4 font-bold">
+                            Miami Resort
+                        </div>
+                        <img class="w-full h-full object-cover" src="/img/hotel 4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </DIV>
+    <!-- /RESORTS GRID-->
+    <!--FORM SEARCH-->
+    <div class="container mx-auto px-4 my-4 flex justify-center">
+        <form class="space-x-4 mt-8" action="">
+            <select class="bg-grey-50 px-4 py-3 border border-gray-300 rounded text-gray-500 font-bold" name="" id="">
+                <option value="">Escolha o Estado</option>
+            </select>
+            <select class="bg-grey-50 px-4 py-3 border border-gray-300 rounded text-gray-500 font-bold" name="" id="">
+                <option value="">Escolha a Cidade</option>
+            </select>
+            <button class="inline-flex items-center text-black bg-yellow-400 px-3 py-2 rounded font-bold">Pesquisar
+                <svg class="w-6 h-6 ml-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </button>
+        </form>
+    </div>
+    <!--/FORM SEARCH-->
+    <!--FOOTER-->
+    <footer class="border-t border-yellow-300">
+        <div class="mt-2 flex items-center flex-row justify-between container mx-auto ">
+            <div class="font-bold text-yellow-400">
+                LOGO
+            </div>
+            <div class="flex flex-row ">
+                <a href=""><img class="w-1/3" src="/img/icon-face.png" alt=""></a>
+                <a href=""><img class="w-1/3" src="/img/icon-insta.jfif" alt=""></a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--/FOOTER-->
+
+
+
 </body>
 </html>
